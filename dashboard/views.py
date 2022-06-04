@@ -64,7 +64,7 @@ def show_all_users(request):
 def delete_post(request, pk=None):
     post = Post.objects.filter(id=pk)
     post.delete()
-    return redirect('/forum_a')
+    return redirect('/forum')
 
 @login_required
 # def delete_reply(request, pk=None):
@@ -87,32 +87,6 @@ def user_home(request):
 def delete_user(request,pk=None):
         User.objects.get(id=pk).delete()
         return redirect("/showallusers")
-
-
-
-
-# def forum_a(request):
-#     user = request.user
-#     posts = Post.objects.filter().order_by('-timestamp')
-    
-#     profile = Profile.objects.all()
-#     if request.method=="POST":   
-#           user = request.user
-#           image = request.user.profile.image
-#           content = request.POST.get('content','')
-#           branch = request.POST.get('branch','')
-#           title = request.POST.get('title','')
-#           post = Post(user1=user, post_content=content, image=image,branch=branch,title=title)
-#           post.save()
-#           messages.success(request, f'Your Question has been posted successfully!!')
-#           return redirect('/forum_a') 
-#     posts = Post.objects.filter().order_by('-timestamp')
-    
-#     context={
-#         'posts':posts,
-        
-#     }
-#     return render(request, "forum.html",context)
 
 
 
