@@ -8,7 +8,6 @@ urlpatterns=[
    path('user_home',views.user_home,name="user_home"),
    path('admin_home',views.admin_home,name="admin_home"), 
    path("forum", views.forum, name="forum"),
-  #path("forum_a", views.forum_a, name="forum_a"),
    path("discussion/<int:myid>", views.discussion, name="discussion"),
    path("showallusers", views.show_all_users, name="showallusers"),
    path('delete_user/<int:pk>',views.delete_user,name="delete_user"),
