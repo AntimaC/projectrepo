@@ -1,0 +1,30 @@
+.tablecss {
+  box-shadow: 4px 4px 4px 4px lightgray;
+  position: relative;
+  width: 100%;
+  display: flex;
+  cursor: pointer;
+  background-color: #eee5e5;
+}
+.tablec {
+  box-shadow: 4px 4px 4px 4px lightgray;
+  position: relative;
+  margin-top: 10%;
+  background-color: #fff;
+  width: 90%;
+}
+
+.notesText {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: rgb(248, 45, 45);
+}
+
+.tfont {
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+}
+hr {
+  border: 1px solid rgb(55, 13, 206);
+}
